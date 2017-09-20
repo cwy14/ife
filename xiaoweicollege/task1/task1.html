@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task1</title>
+</head>
+<body>
+	<table border="1">
+		<caption>下面是一个表格，给表格增加了“border:1px”</caption>
+		<thead>
+			<tr>
+				<th>表头</th>
+				<th>表头</th>
+				<th>表头</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#" title="操作">操作</a></td>
+			</tr>
+
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#" title="操作">操作</a></td>
+			</tr>
+
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#" title="操作">操作</a></td>
+			</tr>
+
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#" title="操作">操作</a></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>总计</td>
+				<td colspan="2">1000</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<form>
+		<label>请输入邮箱地址：<input type="text" name="email" value="" placeholder="这是一个文本输入框"></label>
+		<p>邮箱地址请按要求格式输入</p>
+		<label>请输入密码：<input type="password" name="password" value="" placeholder="这是一个文本输入框"></label>
+		<label>请重复输入密码：<input type="password" name="passwordAgain" value="" placeholder="这是一个文本输入框"></label>
+		<p>密码请为6-16位英文、数字</p>
+		<label>性别：<input type="radio" name="sex" value="male" checked="checked">男<input type="radio" name="sex" value="female">女</label>
+		<label>城市</label>
+		<select name="city">
+			<option value="beijing" selected="selected">北京</option>
+			<option value="shanghai">上海</option>
+			<option value="tianjin">天津</option>
+		</select>
+		<label>爱好：
+			<input type="checkbox" name="interest" value="sport">运动
+			<input type="checkbox" name="interest" value="art">艺术
+			<input type="checkbox" name="interest" value="scient">科学
+		</label>
+		<label>个人描述:</label>
+		<textarea name="description" placeholder="这是一个多行输入框，输入你的个人描述"></textarea>
+		<button type="submit">确认提交</button>
+	</form>
+</body>
+</html>

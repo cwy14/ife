@@ -1,0 +1,54 @@
+问题描述：
+一个父包含框包含一个子元素。给正常流的子元素一个垂直外边距margin-top就会使得父元素跟着往下走，而子元素和父元素的边距则没有发生变化。
+html结构：
+<div class="box1"><div class="box1_1"></div></div>
+
+css样式：
+.box1{height:400px;background:#fad;}
+.box1_1{height:100px;margin-top:50px;background:#ade;}
+解决办法：
+1.修改父元素的高度，增添padding-top样式模拟（常用）；
+2.为父元素添加overflow:hidden;样式即可（完美）；
+5.为父元素或者子元素声明浮动（可用）；
+3.为父元素添加border（可用）;
+4.添加额外的元素放在子元素最前面，设置高度为1px，overflow:hidden(若为行内元素，需要声明为块元素)（啰嗦）;
+6.为父元素或者子元素声明绝对定位（……）。
+ 
+原理
+一个盒子如果没有上补白(padding-top)和上边框(border-top)，那么这个盒子的上边距会和其内部文档流中的第一个子元素的上边距重叠。
+ 
+这就是原因了。“嵌套”的盒元素也算“毗邻”，也会 Collapsing Margins。这个合并Margin其实很常见，就是文章段落元素<p/>，并列很多个的时候，每一个都有上下1em的margin，但相邻的<p/>之间只会显示1em的间隔而不是相加的2em。这个很好理解，我就是奇怪为什么W3C要让嵌套的元素也共享Margin，想不出来在什么情况下需要这样的表现。 　　这个问题的避免方法很多，只要破坏它出现的条件就行。给Outer Div 加上 padding/border，或者给 Outer Div / Inner Div 设置为 float/position:absolute(CSS2.1规定浮动元素和绝对定位元素不参与Margin折叠)。
+ 
+在 IE/Win 中如果这个盒子有 layout 那么这种现象就不会发生了：似乎拥有 layout 会阻止其孩子的边距伸出包含容器之外。此外当 hasLayout = true 时，不论包含容器还是孩子元素，都会有边距计算错误的问题出现。
+
+------------------分割线-----------------------------------------
+
+css字体：
+
+1.text-intent:首行缩进
+2.word-spacing:字(单词)间隔
+3.letter-spacing:字母间隔
+4.text-transform:none uppercase lowercase capitalize(首字母大写)
+5.text-decoration:none underline overline line-through blink
+6.font-family最后增加一种通用字体:h1 {font-family: Georgia, serif;}
+7.font-style:normal italic oblipue
+8.font-variant:small-caps 大写字母变小
+9.font-weight:字体粗细
+10.设置字体大小:body设置为100%,其他元素以em为单位
+	body {font-size:100%;}
+	h1 {font-size:3.75em;}
+	h2 {font-size:2.5em;}
+	p {font-size:0.875em;}
+
+----------------分割线------------------------------------------
+
+宽度为百分比的元素设置水平居中,可以给其父元素设置相同的左右padding
+
+----------------分割线-------------------------------------------
+
+表格边框线合并:table{border-collapse:collapse},不用cellspacing
+单元格内容与边框距离用padding,不用cellpadding
+
+----------------分割线------------------------------------------
+
+vertical-align?

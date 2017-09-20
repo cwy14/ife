@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+body{
+	font-family: "Microsoft Yahei";
+	font-size: 100%;
+}
+
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background-color: #333333;
+	height: 60px;
+	position: relative;
+	padding-top: 11px;
+	/*font-size: 14px;*/
+}
+
+#logo{
+	margin-left: 50px;
+}
+
+nav ul{
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	margin-top: -0.5em;
+}
+
+nav ul li{
+	float: left;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: #ffffff;
+}
+
+nav ul li a:hover{
+	color: #969696;
+}
+
+main{
+	background-color: #dedede;
+	overflow: hidden;
+	padding: 0 2%;
+}
+
+main div{
+	/*width: 96%;*/
+	margin: 2% 0;
+	background-color: #ffffff;
+	padding: 2%;
+	box-shadow: 1px 1px 1px black;
+}
+
+main div h1,h2,h3{
+	font-weight: normal;
+	line-height: 2.5em;
+}
+
+main .article p{
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+
+main .article img{
+	margin: 1.5em 0;
+}
+
+main .article li{
+	line-height: 1.5em;
+}
+
+main .imgs ul{
+	margin-left: 60px;
+}
+
+main .imgs li{
+	width:520px;
+	border: 1px solid #cccccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+main .imgs li p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main div ol{
+	margin-left: 40px;
+}
+
+main div table{
+	width: 100%;
+	border-color: #cccccc;
+	border-collapse: collapse;
+}
+
+main div table th{
+	color: #ffffff;
+	text-align: left;
+	background-color: #000000;
+}
+
+main div table th,td{
+	padding: 0.2em;
+}
+
+main div table tfoot{
+	font-weight: bold;
+}
+
+aside{
+	margin: 2% auto;
+	background-color: #ffffff;
+	padding: 2%;
+	position: relative;
+	box-shadow: 1px 1px 1px black;
+}
+
+aside h2{
+	border-left: 4px solid #dedede;
+	text-indent: 0.5em;
+}
+
+/*#form-label{
+	position: absolute;
+	left: 250px;
+}
+
+#form-input{
+	position: absolute;
+	left: 400px;
+	width: 55%;
+}
+
+aside input,select,textarea,p,label{
+	margin: 8px 0;
+}
+
+aside label{
+	text-align: right;
+	display: block;
+}*/
+
+.label{
+	text-align: right;
+}
+
+.tips{
+	color: #cccccc;
+	height: 2em;
+	vertical-align: top;
+	/*padding: 10px 0 20px;*/
+}
+
+.text-input{
+	height: 1.5em;
+}
+
+aside table{
+	/*position: absolute;*/
+	/*left: 300px;*/
+	margin-left: 30%;
+}
+
+button{
+	font-size: 1em;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 3em;
+	line-height: 3em;
+	color: #ffffff;
+	border:1px solid #3355d0;
+	border-radius: 10px;
+	background-color: #3355d0;
+	cursor: pointer;
+}
+
+footer{
+	background-color: #333333;
+	height: 60px;
+	position: relative;
+	padding-top:1em; 
+}
+
+footer span{
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5em;
+	color: #ffffff; 
+}
