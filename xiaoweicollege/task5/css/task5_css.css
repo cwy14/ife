@@ -149,7 +149,6 @@ aside h2{
 	color: #cccccc;
 	height: 2em;
 	vertical-align: top;
-	/*padding: 10px 0 20px;*/
 }
 
 .text-input{
@@ -157,9 +156,6 @@ aside h2{
 }
 
 aside table{
-	/*position: absolute;*/
-	/*left: 300px;*/
-	/*margin-left: 30%;*/
 	width: 100%;
 }
 
