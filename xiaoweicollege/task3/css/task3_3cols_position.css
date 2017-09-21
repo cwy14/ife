@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 20px;
+	border: 1px solid #999;
+}
+#container{
+	border: 1px solid #999;
+	padding: 20px;
+	background-color: #eee;
+	position: relative;
+	height: auto;
+	/*overflow: auto;*/
+}
+#container>div{
+	border: 1px solid #999;
+	background-color: #fff;
+}
+#left{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+}
+#center{
+	height:400px;
+	margin-left: 220px;
+	margin-right: 140px;
+}
+#right{
+	width: 120px;
+	height: 500px;
+	position: absolute;
+	right: 20px;
+}
+.clearfix{
+	clear: right;
+}
