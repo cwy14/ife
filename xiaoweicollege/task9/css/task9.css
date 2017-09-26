@@ -1,0 +1,577 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input,textarea,select,button{
+	border: 0;
+	outline: 0;
+}
+@font-face{
+	font-family: "iconfont";
+	src:url("../font/iconfont.eot"),
+		url("../font/iconfont.ttf");
+}
+.iconfont{
+	font-family: "iconfont";
+	font-style: normal;
+}
+.iconfont-header{
+	position: absolute;
+	left: 18px;
+	top:50%;
+	transform: translateY(-50%);
+	color: #d5d5d5;
+}
+header{
+	height: 56px;
+	font-family: SimHei;
+	background-color: #2189bf;
+	position: relative;
+}
+header .logo{
+	margin-left: 4%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+header .search{
+	position: absolute;
+	right: 12.2%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+header .search>input{
+	width: 283px;
+	height: 28px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-radius: 14px;
+	outline: 0;
+}
+header .login{
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	right: 7.3%;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 16px;
+}
+header .login>img{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+aside{
+	width: 260px;
+	min-height: 1213px;
+	background-color: #2a2e3d;
+	color: #6e8095;
+	font-family: SimHei;
+	float: left;
+}
+aside>div{
+	padding-left: 46px;
+}
+.info{
+	height: 150px;
+}
+.identify{
+	padding-top: 18px;
+}
+.identify .avatar{
+	width: 57px;
+	height: 57px;
+	vertical-align: middle;
+}
+.identify .username{
+	margin-left: 19px;
+	color: #fff;
+}
+.data{
+	margin-top: 25px;
+}
+.data>div{
+	float: left;
+}
+.data a{
+	color: #6e8095;
+}
+.data a p{
+	text-align: center;
+	font-size: 12px;
+}
+.data a p span{
+	font-size: 16px;
+}
+.data .collection{
+	padding-left: 18px;
+	padding-right: 30px;
+	border-right: 1px solid #6e8095;
+}
+.data .fans{
+	padding-left: 31px;
+}
+.items{
+	font-size: 12px;
+}
+.items>li{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 46px;
+}
+.items>li>div>i{
+	margin-right: 13px;
+}
+.level-1{
+	margin-left: 22px;
+}
+.level-2{
+	margin-left: 30px;
+}
+.level-1>li,.level-2>li{
+	margin-top: 19px;
+}
+.selected{
+	background-color: #393d4e;
+}
+.selected>div{
+	color: #fff;
+}
+
+main{
+	width: 1020px;
+	min-height: 1213px;
+	background-color: #eeeeed;
+	float: left;
+}
+.borderbox{
+	box-sizing: border-box;
+}
+.grayborder{
+	border: 1px solid #aaaaaa;
+}
+.location{
+	padding-left: 30px;
+	background-color: #fff;
+	font-family: SimHei;
+	font-size: 13px;
+	height: 30px;
+	line-height: 30px;
+	color: #aaaaaa;
+}
+.location span{
+	color: #6898c2;
+}
+.container{
+	width: 890px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.query{
+	background-color: #fff;
+	height: 86px;
+	padding: 15px 0 15px 15px;
+	font-family: SimHei;
+	font-size: 12px;
+}
+.query input,.query select{
+	height: 26px;
+	border: 1px solid #aaaaaa;
+	padding-left: 10px;
+}
+[name="date"]{
+	width: 110px;
+}
+[name="volume"]{
+	width: 110px;
+}
+.query label{
+	color: #aaaaaa;
+	margin-right: 15px;
+}
+.query [class*="col"]{
+	margin: 0 15px;
+	height: 56px;
+	float: left;
+	position: relative;
+}
+.col-2{
+	width: 190px;
+}
+.col-2 [class*="row"]{
+	position: absolute;
+}
+.col-2 select{
+	width: 110px;
+}
+.col-2 img{
+	position: absolute;
+	left: 155px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.col-3{
+	width: 290px;
+}
+.col-3 [class*="row"]{
+	width: 100%;
+	position: absolute;
+}
+.row-1{
+	top: 0;
+}
+.row-2{
+	bottom: 0;
+}
+.grid-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.col-4 button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 25px;
+	color: #fff;
+	background-color: #388ac1;
+}
+.history{
+	height: 70px;
+	position: relative;
+	margin-top: 10px;
+	font-family: "Microsoft Yahei";
+}
+.history>div{
+	height: 100%;
+	float: left;
+	background-color: #fff;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+}
+.pointer{
+	width: 30px;
+	line-height: 70px;
+	font-size: 30px;
+	color: #acabab;
+}
+.record{
+	width: 110px;
+	font-size: 12px;
+}
+.record>p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.record>p>span{
+	font-size: 21px;
+	color: #ec6500;
+}
+.record:hover{
+	border-top: 4px solid #4389c9;
+}
+
+.record,.right,.history-query{
+	margin-left: 5px;
+}
+.history-query{
+	width: 130px;
+	font-size: 12px;
+	color: #535353;
+}
+.history-query>p{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.history-query>p>img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.statistics>p{
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	margin-top: 22px;
+	margin-bottom: 6px;
+}
+.statistics>ul{
+	height: 70px
+}
+.statistics>ul>li{
+	width: 200px;
+	background-color: #fff;
+	height: 100%;
+	float: left;
+	position: relative;
+	font-family: SimHei;
+}
+.statistics>ul>li>p{
+	position: absolute;
+	left: 8px;
+	line-height: 30px;
+}
+.statistics>ul>li>p .acount{
+	font-size: 12px;
+}
+.statistics>ul>li>p .text{
+	font-size: 10px;
+	color: #aaaaaa;
+}
+.statistics>ul>li>div{
+	width: 60px;
+	height: 46px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+}
+.item1{
+	border-left: 4px solid #43b29d;
+}
+.item1>div{
+	background-color: #43b29d;
+}
+.item2{
+	border-left: 4px solid #388ac1;
+}
+.item2>div{
+	background-color: #388ac1;
+}
+.item3{
+	border-left: 4px solid #cf4a36;
+}
+.item3>div{
+	background-color: #cf4a36;
+}
+.item4{
+	border-left: 4px solid #e2cd46;
+}
+.item4>div{
+	background-color: #e2cd46;
+}
+.item2,.item3,.item4{
+	margin-left: 30px;
+}
+.group1,.bottom{
+	margin-top: 14px;
+	font-size: 12px;
+	height: 355px;
+}
+.group1>div,.bottom>div{
+	height: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.project{
+	width: 530px;	
+	float: left;
+}
+.title{
+	height: 40px;
+	background-color: #f4f5f6;
+	font-family: "Microsoft Yahei";
+	line-height: 40px;
+	color: #aaaaaa;
+	padding-left: 20px;
+	border-radius: 10px 10px 0 0;
+}
+.project>div,.detail>div,.calendar>div,.rank>div{
+	height: 315px;
+	position: relative;
+}
+.project>div>ul{
+	height: 28px;
+	position: absolute;
+	top:12px;
+	left: 20px;
+	z-index: 3;
+}
+.project>div>ul>li{
+	width: 84px;
+	height: 28px;
+	margin-right: 3px;
+	border-radius: 5px 5px 0 0;
+	float: left;
+	background-color: #ededf0;
+	text-align: center;
+	line-height: 28px;
+}
+.table{
+	width: 490px;
+	height: 262px;
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	z-index: 1;
+}
+.project>div>ul>li.clicked{
+	border: 1px solid #aaaaaa;
+	background-color: #fff;
+	border-bottom: 0;
+}
+.table table{
+	border-collapse: collapse;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.table table td{
+	width: 100px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid #eeeeed;
+	text-align: center;
+}
+.detail{
+	float: right;
+	width: 350px;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+}
+.detail>div>form{
+	width: 290px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 18px;
+}
+.detail>div>form input,textarea{
+	margin-top: 8px;
+}
+.detail label{
+	color: #ededf0;
+}
+.row{
+	width: 290px;
+	height: 45px;
+	border-bottom: 1px solid #aaaaaa;
+	padding-left: 15px;
+	/*line-height: 16px;*/
+}
+.price{
+	width: 80px;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #aaaaaa;
+}
+.price input{
+	width: 100%;
+}
+.principal{
+	width: 185px;
+	height: 100%;
+	float: left;
+	padding-left: 15px;
+}
+div.description{
+	height: 145px;
+}
+div.description textarea{
+	width: 100%;
+	height: 100px;
+}
+.detail>div>form button{
+	width: 50px;
+	height: 25px;
+	background-color: #388ac1;
+	color: #fff;
+	float: right;
+	margin-top: 4px;
+}
+.bottom{
+	font-family: SimHei;
+	font-size: 12px;
+}
+.calendar{
+	width: 350px;
+	float: left;
+}
+.calendar>div{
+	margin: 0 auto;
+}
+.rank{
+	width: 530px;
+	float: right;
+}
+.calendar>div{
+	width: 310px;
+}
+.select-date{
+	border-bottom: 1px solid #a9cfec;
+	text-align: center;
+}
+.select-date select,.select-date button{
+	height: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #cbcbcb;
+}
+.select-date select{
+	border: 1px solid #cbcbcb;
+}
+.today{
+	width: 64px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.month{
+	padding-left: 25px;
+}
+.calendar table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.calendar table thead tr th{
+	height: 30px;
+	border-bottom: 1px solid #cbcbcb;
+}
+/*.calendar table tbody{
+	border-collapse: separate;
+}*/
+.calendar table tbody tr{
+	height: 42px;
+}
+.calendar table tbody tr td{
+	text-align: center;
+}
+.weekend .gregorian{
+	color: #c9161d;
+}
+.festival .lunar{
+	color: #c9161d;
+}
+.mark{
+	border: 1px solid #f4c21d;
+}
+.rank>table{
+	border-collapse: collapse;
+	text-align: center;
+	width: 450px;
+	margin: 17px auto 0;
+}
+.rank>table td,.rank>table th{
+	border: 1px solid #d6d7d8;
+}
+.rank>table tr{
+	height: 25px;
+}
+.rank>table .col-1{
+	width: 57px;
+}
+.rank>table .col-2{
+	width: 90px;
+}

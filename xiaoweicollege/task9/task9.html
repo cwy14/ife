@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task9</title>
+	<link rel="stylesheet" href="css/task9.css" type="text/css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" class="logo">
+		<form class="search">
+			<input type="text" name="search">
+			<i class="iconfont iconfont-header">&#xe741;</i>
+		</form>
+		<a href="#" class="login"><img src="images/login.png">登录</a>
+	</header><!-- /header -->
+
+	<aside>
+		<div class="info">
+			<div class="identify">
+				<img src="images/avatar.png" class="avatar">
+				<span class="username">ABC123</span>
+			</div>
+			<div class="data">
+				<div class="collection"><a href="#"><p><span>111</span><br>收藏</p></a></div>
+				<div class="fans"><a href="#"><p><span>111</span><br>粉丝</p></a></div>
+			</div>
+		</div>
+		<ul class="items">
+			<li class="selected">
+				<div><i class="iconfont">&#xe657;</i>个人报表</div>
+				<ul class="report level-1">
+					<li>
+						<div><i class="iconfont">&#xe8f1; &#xe60f; </i>文件一</div>
+					</li>
+					<li class="selected">
+						<div><i class="iconfont">&#xe8f2; &#xe60f; </i>文件二</div>
+						<ul class="folder level-2">
+							<li class="selected"><div><i class="iconfont">&#xe63c; </i>文档一</div></li>
+							<li><div><i class="iconfont">&#xe63c; </i>文档二</div></li>
+						</ul>
+					</li>
+					<li>
+						<div><i class="iconfont">&#xe8f1;&#xe60f;</i>文件三</div>
+					</li>
+				</ul>
+			</li>
+			<li><div><i class="iconfont">&#xe617;</i>个人收藏</div></li>
+			<li><div><i class="iconfont">&#xe8c6;</i>我的分享</div></li>
+			<li><div><i class="iconfont">&#xe617;</i>图库</div></li>
+			<li><div><i class="iconfont">&#xe617;</i>成长记录</div></li>
+			<li><div><i class="iconfont">&#xe635;</i>账户信息</div></li>
+		</ul>
+	</aside>
+
+	<main>
+		<div class="location">C站 / 个人报表 / 文件二 / <span>文档一</span></div>
+		<div class="container">
+			<div class="query grayborder borderbox">
+				<form>
+					<div class="col-1">
+						<label>查询项</label>
+						<select name="query-item">
+							<option value="1st">第一项</option>
+						</select>
+					</div>
+					<div class="col-2">
+						<div class="row-1">
+							<label>买方</label>
+							<select name="buyer">
+								<option value="A">小A</option>
+							</select>
+						</div>
+						<div class="row-2">
+							<label>卖方</label>
+							<select name="seller">
+								<option value="C">小C</option>
+							</select>
+						</div>
+						<img src="images/change.png">
+					</div>
+					<div class="col-3">
+						<div class="row-1">
+							<div class="grid-1">
+								<label>日期</label>
+								<input type="text" name="date" value="2016-04-01">
+							</div>
+							<div class="grid-2">
+								<label>总耗时</label>
+								<select name="time">
+									<option value="8">8天</option>
+								</select>
+							</div>
+						</div>
+						<div class="row-2">
+							<div class="grid-1">
+								<label>人数</label>
+								<select name="number">
+									<option value="10">10人</option>
+								</select>
+							</div>
+							<div class="grid-2">
+								<label>成交项</label>
+								<select name="volume">
+									<option value="10">10项</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<button type="submit">搜索</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="history">
+				<div class="left pointer grayborder borderbox">
+					<i class="iconfont">&#xe8ef;</i>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="record grayborder borderbox">
+					<p>10:00am<br><span>¥1200</span></p>
+				</div>
+				<div class="right pointer grayborder borderbox">
+					<i class="iconfont">&#xe8f1;</i>
+				</div>
+				<div class="history-query grayborder borderbox">
+					<p><img src="images/history.png">历史查询</p>
+				</div>
+			</div>
+
+			<div class="statistics">
+				<p>2016年4月份统计</p>
+				<ul>
+					<li class="item1 grayborder borderbox">
+						<p>
+							<span class="acount">133311</span><br>
+							<span class="text">成交量</span>
+						</p>
+						<div></div>
+					</li>
+					<li class="item2 grayborder borderbox">
+						<p>
+							<span class="acount">133311</span><br>
+							<span class="text">成交量</span>
+						</p>
+						<div></div>
+					</li>
+					<li class="item3 grayborder borderbox">
+						<p>
+							<span class="acount">133311</span><br>
+							<span class="text">成交量</span>
+						</p>
+						<div></div>
+					</li>
+					<li class="item4 grayborder borderbox">
+						<p>
+							<span class="acount">133311</span><br>
+							<span class="text">成交量</span>
+						</p>
+						<div></div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="group1">
+				<div class="project borderbox grayborder">
+					<p class="title">第一组项目</p>
+					<div>
+						<ul>
+							<li class="clicked">项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+						</ul>
+						<div class="table grayborder">
+							<table>
+								<tbody>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+									<tr>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+										<td>data</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="detail borderbox grayborder">
+					<p class="title">第一组项目</p>
+					<div>
+						<form>
+							<div class="row borderbox">
+								<label>标题</label><br>
+								<input type="text" name="title" value="项目报表三">
+							</div>
+							<div class="row borderbox">
+								<div class="price borderbox">
+									<label>价格</label><br>
+									<input type="text" name="price" value="¥158">
+								</div>
+								<div class="principal borderbox">
+									<label>负责人</label><br>
+									<input type="text" name="principal" value="小A">
+								</div>
+							</div>
+							<div class="row borderbox description">
+								<label>详细描述</label><br>
+								<textarea name="desciption">该项目目前负责人是小A</textarea>
+							</div>
+							<input type="checkbox" name="accept" value="true">
+							<label>遵守保密协议</label>
+							<button type="submit">搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="calendar borderbox grayborder">
+					<p class="title">日历</p>
+					<div>
+						<div class="select-date borderbox">
+							<select name="year" class="year borderbox">
+								<option value="2016">2016年</option>
+							</select>
+							<select name="month" class="month borderbox">
+								<option value="4">4月</option>
+							</select>
+							<select name="day" class="day borderbox">
+								<option value="">标注日期</option>
+							</select>
+							<button class="today borderbox">返回今天</button>
+						</div>
+						<table>
+							<thead>
+								<tr class="borderbox">
+									<th>一</th>
+									<th>二</th>
+									<th>三</th>
+									<th>四</th>
+									<th>五</th>
+									<th>六</th>
+									<th>日</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="borderbox">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="festival mark"><span class="gregorian">1</span><br><span class="lunar">愚人节</span></td>
+									<td class="weekend"><span class="gregorian">2</span><br><span class="lunar">廿五</span></td>
+									<td class="weekend"><span class="gregorian">3</span><br><span class="lunar">廿六</span></td>
+								</tr>
+								<tr class="borderbox">
+									<td><span class="gregorian">4</span><br><span class="lunar">廿七</span></td>
+									<td class="festival"><span class="gregorian">5</span><br><span class="lunar">清明</span></td>
+									<td><span class="gregorian">6</span><br><span class="lunar">廿九</span></td>
+									<td><span class="gregorian">7</span><br><span class="lunar">三月</span></td>
+									<td><span class="gregorian">8</span><br><span class="lunar">初二</span></td>
+									<td class="weekend"><span class="gregorian">9</span><br><span class="lunar">初三</span></td>
+									<td class="weekend"><span class="gregorian">10</span><br><span class="lunar">初四</span></td>
+								</tr>
+								<tr class="borderbox">
+									<td><span class="gregorian">11</span><br><span class="lunar">初五</span></td>
+									<td><span class="gregorian">12</span><br><span class="lunar">初六</span></td>
+									<td><span class="gregorian">13</span><br><span class="lunar">初七</span></td>
+									<td><span class="gregorian">14</span><br><span class="lunar">初八</span></td>
+									<td><span class="gregorian">15</span><br><span class="lunar">初九</span></td>
+									<td class="weekend"><span class="gregorian">16</span><br><span class="lunar">初十</span></td>
+									<td class="weekend"><span class="gregorian">17</span><br><span class="lunar">十一</span></td>
+								</tr>
+								<tr class="borderbox">
+									<td><span class="gregorian">18</span><br><span class="lunar">十二</span></td>
+									<td><span class="gregorian">19</span><br><span class="lunar">十三</span></td>
+									<td><span class="gregorian">20</span><br><span class="lunar">十四</span></td>
+									<td><span class="gregorian">21</span><br><span class="lunar">十五</span></td>
+									<td><span class="gregorian">22</span><br><span class="lunar">十六</span></td>
+									<td class="weekend"><span class="gregorian">23</span><br><span class="lunar">十七</span></td>
+									<td class="weekend"><span class="gregorian">24</span><br><span class="lunar">十八</span></td>
+								</tr>
+								<tr class="borderbox">
+									<td><span class="gregorian">25</span><br><span class="lunar">十九</span></td>
+									<td><span class="gregorian">26</span><br><span class="lunar">廿十</span></td>
+									<td><span class="gregorian">27</span><br><span class="lunar">廿一</span></td>
+									<td><span class="gregorian">28</span><br><span class="lunar">廿二</span></td>
+									<td><span class="gregorian">29</span><br><span class="lunar">廿三</span></td>
+									<td class="weekend"><span class="gregorian">30</span><br><span class="lunar">廿四</span></td>
+									<td class="weekend"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="rank borderbox grayborder">
+					<p class="title">汽车行业品牌榜</p>
+					<table>
+						<thead>
+							<tr>
+								<th class="col-1">排名</th>
+								<th>品牌</th>
+								<th>搜索指数</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col-1">1</td>
+								<td class="col-2">大众</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">2</td>
+								<td class="col-2">丰田</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">3</td>
+								<td class="col-2">奥迪</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">4</td>
+								<td class="col-2">本田</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">5</td>
+								<td class="col-2">福特</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">6</td>
+								<td class="col-2">宝马</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">7</td>
+								<td class="col-2">现代</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">8</td>
+								<td class="col-2">起亚</td>
+								<td class="col-3">data</td> 
+							</tr>
+							<tr>
+								<td class="col-1">9</td>
+								<td class="col-2">奔驰</td>
+								<td class="col-3">data</td>
+							</tr>
+							<tr>
+								<td class="col-1">10</td>
+								<td class="col-2">别克</td>
+								<td class="col-3">data</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
