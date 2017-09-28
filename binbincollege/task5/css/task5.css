@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: SimHei;
+}
+#container{
+	height: 100px;
+	margin-top: 5px;
+	min-width: 2100px;
+}
+.parent{
+	height: 100%;
+	width: 30px;
+	position: relative;
+	float: left;
+	margin-left: 1px;
+}
+.children{
+	background-color: red;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
