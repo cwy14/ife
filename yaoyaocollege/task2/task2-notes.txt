@@ -1,0 +1,2 @@
+提交按钮type="submit",无法用onsubmit="return check()"阻止表单提交
+可以使用type="button"按钮,验证通过再调用form.submit()提交表单

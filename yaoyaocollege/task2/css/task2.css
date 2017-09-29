@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: SimHei;
+}
+form{
+	margin-top: 50px;
+	margin-left: 50px;
+	display: inline-block;
+}
+label{
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+}
+input{
+	margin-left: 2em;
+	border: 1px solid gray;
+	padding: 2px;
+	width: 200px;
+}
+p{
+	margin-left: 100px;
+	margin-top: 6px;
+	margin-bottom: 15px;
+	padding-left: 3em;
+	font-size: 12px;
+	color: gray;
+	height: 12px;
+}
+button{
+	float: right;
+	width: 50px;
+	height: 20px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #00117a;
+}
+input.correctness{
+	border-color: green;
+}
+input.error{
+	border-color: red;
+}
+p.correctness{
+	color: green;
+}
+p.error{
+	color: red;
+}
